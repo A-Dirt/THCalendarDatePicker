@@ -113,13 +113,13 @@
                                                  name:kSemiModalDidHideNotification
                                                object:nil];
     [self configureButtonAppearances];
-    if(_allowClearDate)
-        [self showClearButton];
-    else
-        [self hideClearButton];
+//    if(_allowClearDate)
+//        [self showClearButton];
+//    else
+//        [self hideClearButton];
     [self addSwipeGestures];
-    self.okBtn.enabled = [self shouldOkBeEnabled];
-    [self.okBtn setImage:[UIImage imageNamed:(_autoCloseOnSelectDate ? @"dialog_clear" : @"dialog_ok")] forState:UIControlStateNormal];
+//    self.okBtn.enabled = [self shouldOkBeEnabled];
+//    [self.okBtn setImage:[UIImage imageNamed:(_autoCloseOnSelectDate ? @"dialog_clear" : @"dialog_ok")] forState:UIControlStateNormal];
     [self redraw];
 }
 
